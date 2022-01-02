@@ -4,10 +4,6 @@ public class SeleniumTest {
         //1- Set up the driver
         //2- Create instance of the driver
         //3- Use the driver instance to test selenium
-        //hELLO
-
-
-
 
 
 
