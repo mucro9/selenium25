@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         //1- Set up the driver
         WebDriverManager.chromedriver().setup();
         //2- Create instance of the driver
@@ -17,7 +17,17 @@ public class SeleniumTest {
         //It gets the tittle of the driver
         String currentUrl = driver.getCurrentUrl();
 
-        System.out.println(currentUrl);
+        Thread.sleep(2000);//throw Exception
+
+        driver.navigate().back();
+
+        driver.navigate().to("https://www.facebook.com");
+        driver.manage().window().maximize();
+
+
+
+
+        
 
 
 
