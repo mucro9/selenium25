@@ -11,6 +11,7 @@ public class CydeoVerify {
         //set up the just webdriver
         WebDriver driver = new ChromeDriver();
         driver.get("https://practice.cydeo.com");
+        driver.manage().window().maximize();
         String actualTitle = driver.getTitle();
         String expectedTitle = "Practice";
         if (actualTitle.equals(expectedTitle)){
