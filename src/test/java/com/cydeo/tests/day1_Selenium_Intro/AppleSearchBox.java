@@ -12,11 +12,12 @@ public class AppleSearchBox {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://google.com");
-        driver.findElement(By.name("q")).sendKeys("apple"+ Keys.ENTER);
+        driver.findElement(By.name("q")).sendKeys("apple"+Keys.ENTER);
 
         String expectedTitle = "apple";
         String acutalTitle = driver.getTitle();
-        if (acutalTitle.contains(expectedTitle)){
+
+        if (acutalTitle.startsWith(expectedTitle)){ // startsWith, contains, equals
             System.out.println("Passed");
         }else {
             System.out.println("Failed");
