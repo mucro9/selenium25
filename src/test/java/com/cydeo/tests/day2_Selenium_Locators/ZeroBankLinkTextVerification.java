@@ -31,5 +31,15 @@ public class ZeroBankLinkTextVerification {
             System.out.println("href is failed");
         }
 
+        System.out.println(topLeftText.isDisplayed());
+
+
+
+
+
+
+
+
+
     }
 }
